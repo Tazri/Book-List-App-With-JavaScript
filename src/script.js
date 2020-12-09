@@ -19,11 +19,11 @@ form.addEventListener('submit',event=>{
     //Condition is User Provide correct data
     if(!author.trim()){
         alert('Please Provide Author Name');
-    }else if(author.length > 15){
+    }else if(author.length > 20){
         alert('Author Name should be lessthen 15 character');
     }else if(!bookName.trim()){
         alert('Please Provide Book Name');
-    }else if(bookName > 15){
+    }else if(bookName > 100){
         alert('Book name should be lessthen 15 character');
     }else{
         //Create Tr with provide user data and append book list
