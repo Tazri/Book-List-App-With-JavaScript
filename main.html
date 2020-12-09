@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Book Apps</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <h1>Add Book List App</h1>
+    <div class="container">
+        <!--Input Section-->
+        <form class="form-group" id='form'>
+            <!--Author Section-->
+            <label for="author">Author</label>
+            <input 
+            type="text"
+            id="author"
+            placeholder="Please Enter Author Name">
+            <!--End Author Section-->
+
+            <!--Book Name Section-->
+            <label for="book-name">Book Name</label>
+            <input 
+            type="text"
+            id='book-name'
+            placeholder="Please Enter Book Name">
+            <!--End Book Name Section-->
+
+            <!--Year Number-->
+            <label for="year">Year</label>
+            <input 
+                type="number"
+                id="year"
+                placeholder="0-2000"
+                min="0"
+                max="9999">
+            <!--End Year Number-->
+            <button id="btn">Submit</button>     
+        </form>
+        <!--End Input Section-->
+
+        <div class="result">
+            <table>
+                <thead>
+                    <th>Author</th>
+                    <th>Book Name</th>
+                    <th>Year</th>
+                </thead>
+                <tbody id="book-list">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="delete-cancel">
+            <button class="delete" id='delete'>Delete</button>
+            <button class="cancel" id='cancel'>Cancel</button>
+            <button class='msg' id='msg'>Click on Item to Delete</button>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>

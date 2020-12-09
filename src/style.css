@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0px;
+    color: crimson;
+}
+
+/*Style Container*/
+.container{
+    background: #111;
+    min-width: 280px;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0px auto;
+}
+/*Style Container*/
+
+/*Style Input*/
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 17px;
+    margin: 15px 0px 2px 0px;
+    color: crimson;
+}
+
+input{
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid crimson;
+    padding-left: 5px;
+    padding-right: 10px;
+    color: crimson;
+    background-color: whitesmoke;
+    transition: all 0.3s linear;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid whitesmoke;
+    background: crimson;
+    color: whitesmoke;
+}
+/*End Input Style Here*/
+
+/*remove arrow from number input*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+/*Button style*/
+button{
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid crimson;
+    background: whitesmoke;
+    color: crimson;
+    transition: all 0.3s linear;
+}
+
+button:hover{
+    background: crimson;
+    color: whitesmoke;
+    border:2px solid whitesmoke;
+}
+
+button:focus{
+    outline: none;
+}
+
+/*End Button Style*/
+
+/*Table Style*/
+table{
+    margin: 40px 0px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid whitesmoke;
+}
+
+thead{
+    color: crimson;
+}
+
+table tbody tr{
+    transition: all 0.3s linear;
+}
+
+table tbody tr:nth-child(even){
+    background: crimson;
+    color: whitesmoke;
+}
+
+table tbody tr:nth-child(odd){
+    color: crimson;
+}
+
+table tbody tr:hover{
+    background: whitesmoke;
+    color: crimson;
+}
+
+th{
+    background: whitesmoke;
+}
+
+th,td{
+    padding: 7px ;
+    cursor: default;
+}
+
+/* End Tabel Design */
+
+/*Design Delete And Cancel Item*/
+.delete-cancel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete,.cancel{
+    width: 80px;
+    height: 40px;
+}
+
+.delete{
+    display: inline-block;
+}
+
+.cancel{
+    display: none;
+}
+
+.msg{
+    border: none;
+    font-size: 22px;
+    height: 40px;
+    background: transparent;
+    color: crimson;
+    display: none;
+}
+
+.msg:hover{
+    background: none;
+    border: none;
+    color: crimson;    
+}
+/* End Design Delete and Cancel */
